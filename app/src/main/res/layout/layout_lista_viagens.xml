@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+    <TextView
+            android:text="Local"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:id="@+id/txLocal" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"/>
+    <TextView
+            android:text="Data Chegada: 28/06/2019"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txChegada" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="5dp" app:layout_constraintTop_toBottomOf="@+id/txLocal"
+            android:layout_marginTop="16dp"/>
+    <TextView
+            android:text="Data Partida: 20/06/2019"
+            android:layout_width="173dp"
+            android:layout_height="20dp"
+            android:id="@+id/txPartida" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="25dp" app:layout_constraintTop_toBottomOf="@+id/txLocal"
+            android:layout_marginTop="16dp" app:layout_constraintStart_toEndOf="@+id/txChegada"
+            android:layout_marginStart="25dp" app:layout_constraintHorizontal_bias="0.484"/>
+    <TextView
+            android:text="Gasto total: R$1.000,00"
+            android:layout_width="227dp"
+            android:layout_height="20dp"
+            android:id="@+id/txGastos" android:layout_marginTop="25dp"
+            app:layout_constraintTop_toBottomOf="@+id/txPartida" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
